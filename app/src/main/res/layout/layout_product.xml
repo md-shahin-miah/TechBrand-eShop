@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_card_container"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="6dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:text="10% discount"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:padding="2dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="4dp"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/laptop_1"
+            android:layout_gravity="center_horizontal"
+           />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto"
+            android:justificationMode="inter_word"
+            android:maxLines="2"
+            android:text="Laptop Asus Gaming Rog Strix G15 G513IH HN015W"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/product_img"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/product_img"
+            app:layout_constraintTop_toBottomOf="@+id/product_img" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto"
+                android:maxLines="3"
+                android:text="đ 20.000.000"
+                android:textColor="@color/secondaryColor"
+                android:textSize="14dp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:id="@+id/product_free_ship"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/free_shipping"
+                android:visibility="invisible"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="0.476" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

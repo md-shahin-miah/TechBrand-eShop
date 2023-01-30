@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:id="@+id/cart_item_parent">
+
+    <CheckBox
+        android:id="@+id/cart_item_check_box"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:buttonTint="@color/secondaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_img"
+        app:layout_constraintEnd_toStartOf="@+id/cart_item_img"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_img"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <ImageView
+        android:id="@+id/cart_item_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_check_box"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/laptop_1" />
+
+    <TextView
+        android:id="@+id/cart_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        android:text="Laptop Asus Gaming Rog Strix G15 G513IH HN015W"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_img"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_img" />
+
+    <TextView
+        android:id="@+id/cart_item_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/strike_through"
+        android:ellipsize="end"
+        android:maxWidth="120dp"
+        android:maxLines="1"
+        android:text="đ20.000.000"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/cart_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/cart_item_name" />
+
+    <TextView
+        android:id="@+id/cart_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ellipsize="end"
+        android:maxWidth="120dp"
+        android:maxLines="1"
+        android:text="đ 20.000.000"
+        android:textColor="@color/secondaryColor"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_discount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_discount"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_discount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/cart_item_btn_minus"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/order_quantity_border"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_img"
+        app:layout_constraintStart_toStartOf="@+id/cart_item_discount"
+        app:layout_constraintTop_toBottomOf="@+id/cart_item_price"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_minus" />
+
+    <EditText
+        android:id="@+id/cart_item_edt_quantity"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/order_quantity_border"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/default_quantity"
+        android:textColor="@color/secondaryColor"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_btn_minus"
+        app:layout_constraintEnd_toStartOf="@+id/cart_item_btn_add"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_btn_minus"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_btn_minus" />
+
+    <ImageButton
+        android:id="@+id/cart_item_btn_add"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/order_quantity_border"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_edt_quantity"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_edt_quantity"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_edt_quantity"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ImageView
+        android:id="@+id/cart_item_free_ship"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_edt_quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_price"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_price"
+        app:layout_constraintVertical_bias="0.368"
+        app:srcCompat="@drawable/free_shipping_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

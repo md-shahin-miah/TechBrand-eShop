@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:elevation="4dp"
+                app:menu="@menu/toolbar_menu"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@color/white">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/search_bar_background"
+                    android:drawableEnd="@drawable/ic_search"
+                    android:ellipsize="start"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Search..."
+                    android:maxLines="1"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="6dp"
+                    android:textColor="@color/textColor"
+                    android:textCursorDrawable="@drawable/search_cursor"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/homepage_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/my_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_navigation_drawer_header"
+        app:itemTextAppearance="@style/NavigationViewStyle"
+        app:menu="@menu/navigation_drawer">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp">
+            <include layout="@layout/layout_navigation_follow_us" />
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

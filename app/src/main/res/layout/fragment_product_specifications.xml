@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.ProductSpecificationsFragment">
+
+    <TableLayout
+        android:id="@+id/product_detail_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="CPU"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_cpu"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:text=""
+                android:fontFamily="@font/roboto"
+                android:justificationMode="inter_word"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="OS"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_os"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:text=""
+                android:fontFamily="@font/roboto"
+                android:justificationMode="inter_word"
+                android:textSize="18dp"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="RAM"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_ram"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:text=""
+                android:fontFamily="@font/roboto"
+                android:justificationMode="inter_word"
+                android:textSize="18dp"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="GPU"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_gpu"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text=""
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Monitor"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_monitor"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text=""
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Hard Drive"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_hard_drive"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text=""
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Connection gates"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_gate"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text=""
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Keyboard"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_keyboard"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text=""
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Battery"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_battery"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text=""
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Weight"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/product_specification_weight"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text=""
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darkBlue"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="2dp"
+
+        app:civ_border_color="@color/white"
+        android:src="@drawable/pro1"/>
+
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="8dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Shahin Miah"/>
+
+    <TextView
+        android:id="@+id/user_profile_email"
+        android:layout_width="350dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:text="shahintahsan225@gmail.com"/>
+
+</LinearLayout>

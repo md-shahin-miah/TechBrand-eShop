@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Laptop sell</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    //Navigation
+    <string name="nav_home">Homepage</string>
+    <string name="nav_phone">Phone</string>
+    <string name="nav_laptop">Laptop</string>
+    <string name="nav_setting">Setting</string>
+    <string name="nav_information">App information</string>
+    <string name="nav_log_out">Log out</string>
+    <string name="open_navigation_drawer">Open Navigation Drawer</string>
+    <string name="close_navigation_drawer">Close Navigation Drawer</string>
+
+    //App
+    <string name="email">Email Address</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_user_name">Username or Email Address</string>
+    <string name="regis_user_name">Username (Ex: Shahin123)</string>
+    <string name="password">Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="forgot_pwd">Forgot Password?</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="no_account">Don\'t have any accounts?</string>
+    <string name="money_back">30 days money back guarantee</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="in_stock">In stock:</string>
+    <string name="quantity">Quantity</string>
+    <string name="default_quantity">1</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="delivery_charge">Delivery Charges</string>
+    <string name="total">Total</string>
+    <string name="default_charge">đ 0</string>
+
+    //Data
+    <string-array name="products">
+        <item>
+            {"brand":"MSI","description":"The MSI 15.6\" GE Series GE66 Raider Dragonshield Gaming Laptop combines both performance and aesthetics for gamers who want bit of flair. The bottom edge of the palm rest and its keys support customizable RGB lighting, which users can set to fit their style. This limited edition features the MSI Dragonshield logo and a sci-fi spaceship-themed design. Specs-wise, it\u0027s equipped with a 2.4 GHz Intel Core i9-10980HK eight-core processor, 32GB of DDR4 RAM, a 1TB NVMe PCIe M.2 SSD, and an NVIDIA GeForce RTX 2070 SUPER graphics card. These enable the system to quickly load applications, multitask efficiently, and play graphically demanding games. MSI has also paired the hardware with a 1080p Full HD 300 Hz IPS display. Connectivity options include USB Type-A and Type-C, HDMI, Mini DisplayPort, SD media cards, Gigabit LAN, Wi-Fi 6, and Bluetooth 5.1. Other integrated features includes a webcam, microphones, speakers, and a combo audio jack. The operating system installed is Windows 10 Home.","discount":15.0,"isFreeShipping":true,"price":4.4999E7,"productID":0,"productImages":["R.drawable.laptop_1","R.drawable.laptop_1_slide_1","R.drawable.laptop_1_slide_2","R.drawable.laptop_1_slide_3","R.drawable.laptop_1_slide_4"],"productName":"Laptop MSI GE66 Raider 10SF 483VN Dragonshield Limited Edition","quantityInStock":4,"rate":5.0,"specification":{"battery":"Li-Ion 4-Cell 99.9Wh","connectionGate":"Killer ax Wi-Fi + Bluetooth v5.1","cpu":"Intel® Core™ i7-10875H 2.30GHz - 5.10GHz 8 Cores 12 Threads","gpu":"NVIDIA GeForce GTX 1650 4GB GDDR6 + Intel UHD Graphics","hardDrive":"1 TB NVMe PCIe Gen3x4","keyboard":"RGB Steel Series","monitor":"15.6\" FHD (1920x1080)","os":"Windows 11 SL 64 Bit","ram":"16GB (8GB x2) DDR4 3200MHz Max 64GB","weight":2.38}}
+        </item>
+        <item>
+            {"brand":"MSI","description":"The MSI Creator Series Creator 15 Laptop is primarily designed for content creators; however, it's also a well-rounded system for everyday users and even gamers. Specs-wise, it's equipped with a 2.3 GHz Intel Core i7-10875H eight-core processor, 16GB of DDR4 memory, a 512GB NVMe PCIe M.2 SSD, and an NVIDIA GeForce RTX 2060 graphics card. Its 15.6\" IPS display features a 1920 x 1080 Full HD resolution and supports multi-touch inputs for enhanced efficiency and accessibility. Other integrated features include an SD card reader, USB Type-A ports, Thunderbolt 3, HDMI, Wi-Fi 6, Bluetooth 5.1, a backlit keyboard, a webcam, a microphone, speakers, and a combo audio jack. The operating system installed is Windows 10 Home.","discount":10,"isFreeShipping":true,"price":34999000,"productID":0,"productImages":["R.drawable.laptop_2","R.drawable.laptop_2_slide_1","R.drawable.laptop_2_slide_2","R.drawable.laptop_2_slide_3","R.drawable.laptop_2_slide_4"],"productName":"MSI 15.6\" Creator Series Creator 15 Multi-Touch","quantityInStock":4,"rate":5,"specification":{"battery":"Li-Ion 4-Cell 99.9Wh","connectionGate":"Wi-Fi 6 (802.11ax) + Bluetooth 5.1","cpu":"Intel Core i7-10875H 2.3GHz-5.1GHz 8-Core","gpu":"NVIDIA GeForce RTX 2060 with 6 GB GDDR6 VRAM","hardDrive":"512 GB M.2 NVMe PCIe","keyboard":"84-Key Notebook Backlight","monitor":"LCD 15.6\" FHD (1920 x 1080) TouchScreen","os":"Windows 11 SL 64 Bit","ram":"16GB (8GB x2) DDR4 2666MH (maximum 64GB)","weight":2.1}}
+        </item>
+        <item>
+            {"brand":"ASUS","description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora officia natus, itaque consequuntur cum earum esse. Velit praesentium omnis sapiente numquam magni! Commodi, rerum! Qui, esse explicabo dolore architecto, distinctio molestiae excepturi a pariatur fugiat, repudiandae deserunt. Earum expedita illo provident minus dignissimos eius assumenda laudantium. Repellat, sunt. Dicta, harum,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora officia natus, itaque consequuntur cum earum esse. Velit praesentium omnis sapiente numquam magni! Commodi, rerum!","discount":12,"isFreeShipping":false,"price":19000000,"productID":0,"productImages":["R.drawable.laptop_8","R.drawable.laptop_8_slide_1","R.drawable.laptop_8_slide_2","R.drawable.laptop_8_slide_3","R.drawable.laptop_8_slide_4"],"productName":"Laptop ASUS Gaming FX506LH-HN002T","quantityInStock":15,"rate":4.5,"specification":{"battery":"Lithium-Ion 3-Cell: 48 Wh","connectionGate":"Wi-Fi 6 (802.11ax) + Bluetooth 5.1","cpu":"AMD Ryzen 7 4800H 2.9GHz-4.2GHz 8-Core","gpu":"NVIDIA GeForce GTX 1650 Ti with 4 GB GDDR6 VRAM","hardDrive":"512 GB M.2 NVMe PCIe","keyboard":"Notebook Keyboard with Backlight","monitor":"IPS 15.6\" FHD (1920x1080)","os":"Windows 10 Home","ram":"16GB (8GB x2) DDR4 3200MHz (maximum 32GB)","weight":2.3}}
+        </item>
+    </string-array>
+</resources>
